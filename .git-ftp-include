@@ -1,0 +1,2 @@
+# always upload the dist folder
+!dist/
