@@ -1,0 +1,25 @@
+{
+  "name": "izm-site",
+  "description": "Oyun geliştirme, yazılım, 3D modelleme, animasyon, fotoğrafçılık, e-ticaret ve çok daha fazlasını gençlere öğreten, bu alanda onlara her türlü desteği çıkmayı hedefleyen yazılım şirketi.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@iconscout/vue-unicons": "^0.0.2",
+    "@nuxtjs/device": "^1.2.7",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.0.2",
+    "nuxt": "^2.14.6",
+    "nuxt-buefy": "^0.4.3",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^1.1.1"
+  }
+}
