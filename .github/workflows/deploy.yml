@@ -1,25 +1,25 @@
 on: push
-name: Build and Publish Front End Framework Website
+name: Vue/Nuxt kodlarını derle ve FTP'ye yükle
 jobs:
   FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+    name: Kurulum
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.1.0
         with:
           fetch-depth: 2
 
-      - name: Use Node.js 12.x
+      - name: Node.js 12.x Kur
         uses: actions/setup-node@v1
         with:
           node-version: "12.x"
 
-      - name: Build Project
+      - name: Projeyi Derle
         run: |
           npm install
-          npm run build --if-present
+          npm run build
 
-      - name: FTP-Deploy-Action
+      - name: FTP'ye Aktar
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
         with:
           ftp-server: ftp://ftp.izmgamestudios.com/
