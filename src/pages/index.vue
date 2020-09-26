@@ -64,13 +64,5 @@ export default {
   head: {
     titleTemplate: "",
   },
-  data() {
-    return {
-      akyazi: false,
-    };
-  },
-  mounted() {
-    setInterval(() => (this.akyazi = !this.akyazi), 1500);
-  },
 };
 </script>
