@@ -3,7 +3,7 @@
     :class="{
       'has-background-white': !mobile && $colorMode.value === 'light',
       'has-background-black': mobile && $colorMode.value === 'dark',
-      'footer px-0 has-text-centered': true,
+      'footer has-text-centered': true,
       'mobile-footer py-5': mobile,
       'py-4': !mobile,
     }"
@@ -11,33 +11,31 @@
     <nuxt-link
       v-for="(page, index) in getPages"
       :title="page.name.toLowerCase()"
-      class="social-link"
+      :class="{
+        'button social-link': true,
+        'is-active': [$route.fullPath, $route.fullPath.slice(0, -1)].includes(
+          page.to
+        ),
+        'is-black': mobile && $colorMode.value === 'dark',
+        'is-dark': !mobile && $colorMode.value === 'dark',
+        'is-white transparent': $colorMode.value === 'light',
+      }"
       :to="page.to"
       :key="index"
     >
-      <button
-        :class="{
-          button: true,
-          'is-active': [$route.fullPath, $route.fullPath.slice(0, -1)].includes(
-            page.to
-          ),
-          'is-black': mobile && $colorMode.value === 'dark',
-          'is-dark': !mobile && $colorMode.value === 'dark',
-          'is-white': $colorMode.value === 'light',
-        }"
-      >
-        <Home v-if="page.icon === 'home'" size="24px" />
-        <Info v-else-if="page.icon === 'info'" size="24px" />
-        <Phone v-else-if="page.icon === 'phone'" size="24px" />
-        <Picture v-else-if="page.icon === 'gallery'" size="24px" />
-        <span class="ml-2">{{ page.name }}</span>
-      </button>
+      <Home v-if="page.icon === 'home'" size="24px" />
+      <Info v-else-if="page.icon === 'info'" size="24px" />
+      <Phone v-else-if="page.icon === 'phone'" size="24px" />
+      <Picture v-else-if="page.icon === 'gallery'" size="24px" />
+
+      <span class="ml-2">{{ page.name }}</span>
     </nuxt-link>
   </footer>
 </template>
 
 <style lang="scss" scoped>
 footer {
+  margin: unset 1.5em;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -49,9 +47,11 @@ footer {
 }
 
 .social-link {
-  .button {
-    text-decoration: none;
-    margin-bottom: 0.25em;
+  text-decoration: none;
+  margin-bottom: 0.25em;
+
+  &.transparent {
+    background-color: transparent;
   }
 
   &:not(:last-child) {

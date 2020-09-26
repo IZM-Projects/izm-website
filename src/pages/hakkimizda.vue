@@ -39,8 +39,8 @@
 <style lang="scss" scoped>
 @media screen and (max-width: 1024px) {
   .content {
-    margin-top: 2em;
     margin-bottom: 3em;
+    margin-top: 2em;
   }
 }
 </style>

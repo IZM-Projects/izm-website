@@ -38,9 +38,9 @@
 
 @media screen and (max-width: 1024px) {
   .container {
+    margin-bottom: 3em;
     position: absolute;
     margin-top: 2em;
-    margin-bottom: 3em;
     left: 0;
     top: 0;
   }

@@ -7,7 +7,7 @@
     <div v-if="$device.isMobile" class="mobile-footer">
       <button
         :class="{
-          'button mobile-footer': true,
+          'button mobile-footer is-radiusless': true,
           'is-light': $colorMode.value === 'light',
           'is-black': $colorMode.value === 'dark',
         }"
@@ -16,7 +16,7 @@
         <Bars size="24px" />
       </button>
 
-      <transition name="slide" mode="in-out">
+      <transition name="slide-fade" mode="in-out">
         <Footer :mobile="true" v-if="mobileFooter" />
       </transition>
     </div>
