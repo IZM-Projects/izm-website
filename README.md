@@ -21,7 +21,7 @@ Sitenin kodlarını derleyebilmek için öncelikle bilgisayarınıza [Node.js](h
 - Modülleri yükleyin.
   - Eğer `yarn` yüklüyse: `yarn` veya `yarn install`
   - Yüklü değil ise: `npm install`
-- Yükleme tamamlandıktan sonra siteyi çalıştırmak geliştirici modunda çalıştırın.
+- Yükleme tamamlandıktan sonra siteyi çalıştırmak çalıştırın.
   - Bunun için `yarn` var ise `yarn dev`, NPM ile ise `npm run dev` yazın.
   - Siteyi statik olarak dışa aktarıp başka platformlarda paylaşmak için `yarn export` (veya `npm run export`) komutunu kullanın ve `dist/` klasörüne oluşturulacak dosyaları sunucu sağlayıcınıza yükleyin.
 
