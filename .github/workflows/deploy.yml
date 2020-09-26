@@ -1,8 +1,8 @@
 on: push
-name: Vue/Nuxt kodlarını derle ve FTP'ye yükle
+name: Kurulum
 jobs:
   FTP-Deploy-Action:
-    name: Kurulum
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.1.0
@@ -17,7 +17,7 @@ jobs:
       - name: Projeyi Derle
         run: |
           npm install
-          npm run build
+          npm run generate
 
       - name: FTP'ye Aktar
         uses: SamKirkland/FTP-Deploy-Action@3.1.1
