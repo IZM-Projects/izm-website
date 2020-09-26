@@ -3,7 +3,7 @@
 ![demo image](/images/demo.png)
 
 <p align="center">
-    <a href="/images/demo-dark.png"><small>Karanlık Tema</small></a>
+    <a href="/images/demo-dark.png"><small>- Karanlık Tema -</small></a>
 </p>
 
 > 🛠 Bu site, [@eggsydev](https://github.com/eggsydev) tarafından geliştirilmekte ve yönetilmektedir.
