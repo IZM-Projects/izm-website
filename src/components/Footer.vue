@@ -86,7 +86,7 @@ export default {
         },
         {
           icon: "info",
-          name: "Hakımızda",
+          name: "Hakkımızda",
           to: "/hakkimizda",
         },
         {
