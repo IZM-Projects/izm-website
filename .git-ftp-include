@@ -1,2 +1,2 @@
-# always upload the dist folder
+# çıktı klasörünü her zaman yükle
 !dist/
