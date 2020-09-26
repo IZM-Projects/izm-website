@@ -61,21 +61,18 @@
 </template>
 
 <style lang="scss" scoped>
-.card {
-  transform: translate(-50%, -50%);
-  width: fit-content;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-}
-
 .align-center {
   align-self: center;
 }
 
 @media screen and (max-width: 1024px) {
-  .card {
+  .card-container {
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    position: absolute;
     max-width: 300px;
+    left: 50%;
+    top: 50%;
 
     div.is-flex {
       place-content: center;
