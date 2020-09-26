@@ -25,4 +25,4 @@ jobs:
           ftp-server: ${{ secrets.FTP_HOST }}
           ftp-username: ${{ secrets.FTP_USER }}
           ftp-password: ${{ secrets.FTP_PASS }}
-          local-dir: dist
+          git-ftp-args: --all
