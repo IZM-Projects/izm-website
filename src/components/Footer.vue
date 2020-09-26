@@ -16,9 +16,10 @@
         'is-active': [$route.fullPath, $route.fullPath.slice(0, -1)].includes(
           page.to
         ),
+        transparent: mobile && $colorMode.value === 'light',
         'is-black': mobile && $colorMode.value === 'dark',
         'is-dark': !mobile && $colorMode.value === 'dark',
-        'is-white transparent': $colorMode.value === 'light',
+        'is-white': $colorMode.value === 'light',
       }"
       :to="page.to"
       :key="index"
