@@ -1,15 +1,16 @@
 <template>
-  <button
+  <a
     :class="{
       button: true,
       'is-dark': $colorMode.value === 'dark',
       'is-white': $colorMode.value === 'light',
     }"
+    title="Temayı Değiştir"
     @click="themeSwitch"
   >
     <Sun v-if="$colorMode.value === 'dark'" />
     <Moon v-else />
-  </button>
+  </a>
 </template>
 
 
@@ -25,6 +26,7 @@
 
 <script>
 import { UilBrightness, UilMoon } from "@iconscout/vue-unicons";
+
 export default {
   components: {
     Sun: UilBrightness,

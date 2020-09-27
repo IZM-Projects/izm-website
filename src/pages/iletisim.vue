@@ -7,13 +7,22 @@
   >
     <div class="columns has-text-centered-mobile mb-0">
       <div class="column">
-        <img draggable="false" src="/icon.png" width="150" class="is-rounded" />
+        <img
+          class="is-rounded"
+          draggable="false"
+          src="/icon.png"
+          alt="izm-logo"
+          width="150"
+        />
       </div>
 
       <div class="column align-center">
         <div class="is-flex">
           <Facebook size="24px" class="mr-2" />
-          <a href="https://facebook.com/izm.gamestudios" target="_blank"
+          <a
+            href="https://facebook.com/izm.gamestudios"
+            rel="noreferrer"
+            target="_blank"
             >IZM Game Studios</a
           >
         </div>
@@ -27,7 +36,10 @@
         </div>
         <div class="is-flex">
           <Instagram size="24px" class="mr-2" />
-          <a href="https://instagram.com/izmgamestudios" target="_blank"
+          <a
+            href="https://instagram.com/izmgamestudios"
+            rel="noreferrer"
+            target="_blank"
             >@izmgamestudios</a
           >
         </div>
@@ -43,6 +55,7 @@
               :href="`https://api.whatsapp.com/send?phone=+905417709205&lang=tr&text=${encodeURIComponent(
                 'Merhaba, ben siteden iletişime geçiyorum 👋'
               )}`"
+              rel="noreferrer"
               target="_blank"
               >+90 541 770 92 05</a
             >
@@ -52,7 +65,7 @@
     </div>
 
     <p>
-      <a href="https://g.page/IZM-Game" target="_blank"
+      <a href="https://g.page/IZM-Game" rel="noreferrer" target="_blank"
         ><Map fill="rgb(50, 115, 220)" size="18px" class="mr-2" />İnönü Mah.,
         Ada Cd. No: 273-9, Akyazı/Sakarya</a
       >

@@ -1,6 +1,11 @@
 <template>
   <div class="is-flex center">
-    <a href="https://instagram.com/izmgamestudios" target="_blank">
+    <a
+      href="https://instagram.com/izmgamestudios"
+      title="Instagram"
+      rel="noreferrer"
+      target="_blank"
+    >
       <Instagram
         fill="rgba(213 ,0 ,135 , 0.75)"
         size="32px"
@@ -8,7 +13,12 @@
       />
     </a>
 
-    <a href="https://facebook.com/izm.gamestudios" target="_blank">
+    <a
+      href="https://facebook.com/izm.gamestudios"
+      title="Facebook"
+      rel="noreferrer"
+      target="_blank"
+    >
       <Facebook
         fill="rgba(72 ,103 ,170 , 0.75)"
         size="32px"
@@ -20,6 +30,8 @@
       :href="`https://api.whatsapp.com/send?phone=+905417709205&lang=tr&text=${encodeURIComponent(
         'Merhaba, ben siteden iletişime geçiyorum 👋'
       )}`"
+      title="WhatsApp"
+      rel="noreferrer"
       target="_blank"
     >
       <WhatsApp
