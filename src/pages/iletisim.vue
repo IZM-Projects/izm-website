@@ -66,7 +66,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .card-container {
+  .card {
     transform: translate(-50%, -50%);
     width: fit-content;
     position: absolute;
