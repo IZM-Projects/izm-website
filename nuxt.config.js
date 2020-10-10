@@ -13,70 +13,78 @@ export default {
       { charset: "utf-8" },
       {
         name: "viewport",
-        content: "width=device-width, initial-scale=1",
+        content: "width=device-width, initial-scale=1"
       },
       {
         name: "keywords",
         content:
-          "yazılım, akyazı, sakarya, izm, game studios, oyun stüdyosu, modelleme, aşçılık, youtuber, vlog, video",
+          "yazılım, akyazı, sakarya, izm, game studios, oyun stüdyosu, modelleme, aşçılık, youtuber, vlog, video"
       },
       {
         name: "description",
-        content: description,
+        content: description
       },
       {
         name: "og:title",
-        content: "IZM Game Studios",
+        content: "IZM Game Studios"
       },
       {
         name: "og:description",
-        content: description,
+        content: description
       },
       {
         name: "og:image",
-        content: "/icon.png",
+        content: "/icon.png"
       },
       {
         name: "twitter:title",
-        content: "IZM Game Studios",
+        content: "IZM Game Studios"
       },
       {
         name: "twitter:description",
-        content: description,
+        content: description
       },
       {
         name: "twitter:card",
-        content: "summary",
+        content: "summary"
       },
       {
         name: "twitter:image",
-        content: "/icon.png",
+        content: "/icon.png"
       },
       {
         name: "og:image",
-        content: "/icon.png",
-      },
+        content: "/icon.png"
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap",
+          "https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"
       },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap",
-      },
-    ],
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      }
+    ]
   },
   components: true,
   modules: [
     ["nuxt-buefy", { materialDesignIcons: false }],
-    "@nuxtjs/pwa",
-    "@nuxtjs/device",
+    [
+      "@nuxtjs/pwa",
+      {
+        manifest: {
+          name: "IZM Game Studios",
+          short_name: "IZM",
+          theme_color: "#c0392b"
+        }
+      }
+    ],
+    "@nuxtjs/device"
   ],
   buildModules: ["@nuxtjs/color-mode"],
-  css: ["@/stylesheets/root"],
+  css: ["@/stylesheets/root"]
 };

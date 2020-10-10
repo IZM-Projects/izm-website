@@ -8,21 +8,21 @@
     >
       <Instagram
         fill="rgba(213 ,0 ,135 , 0.75)"
-        size="32px"
         class="social-icon"
+        size="32px"
       />
     </a>
 
     <a
-      href="https://facebook.com/izm.gamestudios"
+      href="https://fb.me/izmstudios"
       title="Facebook"
       rel="noreferrer"
       target="_blank"
     >
       <Facebook
         fill="rgba(72 ,103 ,170 , 0.75)"
-        size="32px"
         class="social-icon"
+        size="32px"
       />
     </a>
 
@@ -36,8 +36,8 @@
     >
       <WhatsApp
         fill="rgba(13 ,193 ,67 ,0.75)"
-        size="32px"
         class="social-icon"
+        size="32px"
       />
     </a>
   </div>
