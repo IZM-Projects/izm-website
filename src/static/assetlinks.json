@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "izm.izm_app",
+      "sha256_cert_fingerprints": [
+        "8D:B4:9A:19:7F:69:1B:26:B1:EF:DA:F5:60:A8:DB:35:DE:DE:EE:B3:9F:16:52:91:86:A7:9D:CA:8C:20:22:E9"
+      ]
+    }
+  }
+]

@@ -1,25 +1,30 @@
 {
   "name": "izm-site",
   "description": "Oyun geliştirme, yazılım, 3D modelleme, animasyon, fotoğrafçılık, e-ticaret ve çok daha fazlasını gençlere öğreten, bu alanda onlara her türlü desteği çıkmayı hedefleyen yazılım şirketi.",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "license": "MIT",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "npm run resources && nuxt generate",
+    "resources": "capacitor-resources -p android"
   },
   "dependencies": {
-    "@iconscout/vue-unicons": "^0.0.2",
+    "@capacitor/android": "2.4.5",
+    "@capacitor/cli": "^2.4.5",
+    "@capacitor/core": "^2.4.5",
+    "@iconscout/vue-unicons": "^0.0.3",
     "@nuxtjs/device": "^1.2.7",
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/pwa": "^3.1.2",
-    "nuxt": "^2.14.6",
-    "nuxt-buefy": "^0.4.3",
-    "sass": "^1.27.0",
-    "sass-loader": "^10.0.3"
+    "@nuxtjs/pwa": "^3.3.3",
+    "capacitor-resources": "^2.0.5",
+    "nuxt": "^2.14.12",
+    "nuxt-buefy": "^0.4.4",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0"
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^1.1.1"
+    "@nuxtjs/color-mode": "^2.0.2"
   }
 }

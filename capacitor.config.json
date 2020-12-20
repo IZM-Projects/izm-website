@@ -1,0 +1,12 @@
+{
+  "appId": "com.izmstudios.app",
+  "appName": "IZM Studios",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

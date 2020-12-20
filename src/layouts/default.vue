@@ -59,6 +59,7 @@ import { UilBars } from "@iconscout/vue-unicons";
 export default {
   head() {
     return {
+      titleTemplate: "%s - IZM Game Studios",
       htmlAttrs: {
         lang: "tr",
       },
