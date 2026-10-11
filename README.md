@@ -21,9 +21,9 @@ Sitenin kodlarını derleyebilmek için öncelikle bilgisayarınıza [Node.js](h
 - Modülleri yükleyin.
   - Eğer `yarn` yüklüyse: `yarn` veya `yarn install`
   - Yüklü değil ise: `npm install`
-- Yükleme tamamlandıktan sonra siteyi çalıştırmak çalıştırın.
+  - Yükleme tamamlandıktan sonra siteyi çalıştırın.
   - Bunun için `yarn` var ise `yarn dev`, NPM ile ise `npm run dev` yazın.
-  - Siteyi statik olarak dışa aktarıp başka platformlarda paylaşmak için `yarn export` (veya `npm run export`) komutunu kullanın ve `dist/` klasörüne oluşturulacak dosyaları sunucu sağlayıcınıza yükleyin.
+  - Siteyi statik olarak dışa aktarıp başka platformlarda paylaşmak için `yarn generate` (veya `npm run generate`) komutunu kullanın ve `dist/` klasöründe oluşturulan dosyaları sunucu sağlayıcınıza yükleyin.
 
 ### 🧬 Sitede Kullanılan Teknolojiler
 
@@ -33,4 +33,4 @@ Bu teknolojileri öğrenmek ileride işinize yarayabilir ve çalışmalarınız�
 
 ### 🙏 Katkıda Bulunma
 
-Sitenin geliştirilmesinde destek olmak için sitedeki hataları bildirebilir, özellik isteklerinizi gönderebilir veya direkt koda müdahale ederek "pull request" gönderip kodunuzu incelememizi sağlayabilirsiniz. Daha fazlası için [aramıza katılmayı da unutma](https://izmgamestudios/iletisim)!
+Sitenin geliştirilmesinde destek olmak için sitedeki hataları bildirebilir, özellik isteklerinizi gönderebilir veya direkt koda müdahale ederek "pull request" gönderip kodunuzu incelememizi sağlayabilirsiniz. Daha fazlası için [aramıza katılmayı da unutma](https://izmgamestudios.com/iletisim)!
